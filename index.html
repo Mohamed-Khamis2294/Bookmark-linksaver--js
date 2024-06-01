@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-Assigment-3</title>
+  <!-- *google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  <!-- **************** -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bookmarker</h1>
+    <h2>
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+    <form action="">
+      <label for="bookmark"><div class="flex"><i class="fa-solid fa-book-bookmark"></i><p>site Name</p></div></label>
+      <input type="text" placeholder="Bookmark Name" class="" id="bookmark">
+      <label for="website"><div class="flex"><i class="fa-solid fa-link"></i><p>site URL</p></div></label>
+      <input type="text" placeholder="Website URL" class="" id="website">
+      <div class="m-auto">
+      <button class="btn btn-add">Add link</button>
+      <button class="btn btn-clear">Delete all</button>
+      </div>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>website Name</th>
+          <th>visit </th>
+          <th> Delete</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+      </tbody>
+    </table>
+    <div class="toast hidden " >You add one website</div>
+  </div>
+  <script src="js/script.js"></script>
+</body>

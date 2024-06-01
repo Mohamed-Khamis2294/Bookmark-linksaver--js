@@ -1,0 +1,152 @@
+body{
+  background-color: #F7ECDE;
+}
+.container{
+  width: 85%;
+  margin: auto;
+}
+h1{
+  font-family: "Pacifico", cursive;
+  padding-top: 50px;
+  margin:0 auto 60px auto;
+  font-weight: 500;
+  font-size: 50px;
+  width: fit-content;
+  color: #352E28;
+  position: relative;
+}
+h1::after{
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  background-color: #FEC260;
+  left: 0;
+  bottom: 20px;
+  z-index: -1;
+  transition: all 0.6s;
+}
+h1:hover::after{
+  height: 35px;
+}
+h2{
+ text-align: center;
+  padding-top: 40px;
+  border-top: 2px dotted #000;
+  background-image: linear-gradient(to right,#3FA55B,#B1AC4A);
+  background-clip: text;
+  color: transparent;
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.flex{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+label p{
+  font-size: 16px;
+  color: #352E28;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+input{
+  margin: 10px 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #C6C6C6;
+}
+input:focus{
+  outline: none;
+  border: 1px solid #D99C39;
+  box-shadow: 0 0 4px 2px #d99c39af;
+}
+.m-auto{
+  text-align: center;
+  margin: 30px 0;
+}
+.btn{
+  background-color: #D1512D;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px ;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #BB4120;
+}
+table{
+  width: 100%;
+  background:#fff;
+  margin-bottom: 20px;
+}
+th,td{
+  padding: 8px;
+}
+td{
+  text-align: center;
+}
+.btn-v{
+  background-color: #9EB23B;
+}
+.btn-v,.btn-d{
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+.btn-v:hover{
+  background-color: #8A9E23;
+}
+td a i{
+  margin-right: 4px;
+}
+td button i{
+  margin-right: 4px;
+}
+.btn-d{
+background-color: #EB1D36;
+}
+.btn-d:hover{
+  background-color: #D30820;
+}
+
+.valid,.valid:focus{
+  outline: none;
+  border: 1px solid green;
+  box-shadow: 0 0 4px 2px rgba(0, 128, 0, 0.733);
+}
+.invalid,.invalid:focus{
+  outline: none;
+  border: 1px solid red;
+  box-shadow: 0 0 4px 2px rgba(255, 0, 0, 0.705);
+}
+.bg-green{
+  background-color: #3FA55B;
+}
+.bg-red{
+  background-color: #D30820;
+}
+.toast{
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.hidden{
+display: none;
+}
